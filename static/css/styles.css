@@ -1,0 +1,167 @@
+body{
+	font:15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0px;
+	background-color:white;
+  
+}
+
+.container{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+  
+}
+
+header{
+	background:#03A9F4;
+	border-bottom:#448AFF 3px solid;
+	height:120px;
+	width:100%;
+	padding-top:30px;
+
+}
+
+.main-header{
+			text-align:center;
+			background-color: blue;
+			height:100px;
+			width:100%;
+			margin:0px;
+		}
+#brandname{
+	float:left;
+	font-size:30px;
+	color: #fff;
+	margin: 10px;
+}
+
+header h2{
+	text-align:center;
+	color:#fff;
+
+
+}
+
+
+
+#member-profile-form .form-group {
+      margin-bottom: 1rem;
+      display: inline-block;
+      margin-right: 60px;
+  }
+  #member-employee-form .form-text {
+      display: inline;
+  }
+  ul#myTab {
+      border-bottom: 2px solid grey;
+      margin-bottom: 20px;
+      margin-top: 15px
+  }
+  
+  .update-message.alert.alert-success {
+      margin-top: 20px;
+      text-align: center;
+  }
+  
+  table#employee-details {
+      font-size: 12px;
+  }
+  
+  table#employee-details img {
+      margin-left: 10px;
+  }
+  .action-emp{
+      cursor: pointer;
+  }
+  
+  @media (min-width: 576px) {
+      #member-employee-form-modal.modal-dialog {
+      max-width: 700px;
+      margin: 1.75rem auto;
+  }
+  }
+  
+  .modal.show .modal-dialog {
+      min-width: 700px;
+      -webkit-transform: translate(0,0);
+      transform: translate(0,0);
+  }
+  
+  #member-employee-form-modal .form-group {
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 1rem;
+  }
+  
+  #member-employee-form-modal input[type="checkbox"] {
+      margin-right: 20px;
+      margin-top: 3px;
+      width: 20px;
+      height: 20px;
+  }
+  
+  #member-employee-form-modal2 .form-group {
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 1rem;
+  }
+  
+  #member-employee-form-modal2 input[type="checkbox"] {
+      margin-right: 20px;
+      margin-top: 3px;
+      width: 20px;
+      height: 20px;
+  }
+
+  @media (min-width: 1200px){
+      .container {
+          max-width: 1371px;
+      }
+  }
+  
+  h4.profile-sub-head-people {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #bbb0b0;
+      padding-bottom: 5px;
+      display: flex;
+      width: 100%;
+  }
+  
+  h4.profile-sub-head {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #bbb0b0;
+      padding-bottom: 5px;
+      display: flex;
+      width: 100%;
+      border: 1px solid lightgrey;
+      background-color: aliceblue;
+      padding: 15px 10px;
+      border-radius: 6px;
+  }
+  
+  .form-footer {
+      border-top: 1px solid #e9ecef;
+      padding-bottom: 10px;
+      padding-top: 20px;
+  }
+  
+  .required-form {
+      color: red !important;
+      font-size: 12px;
+      font-weight: 900;
+      display: inline;
+  }
+
+.btn-info {background-color: #2196F3;
+	height:40px;
+	width:100px;} /* Blue */
+.btn-info:hover {background: #0b7dda;}
+
+
+.resultss{
+	border-radius: 15px 50px;
+    background: #345fe4;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+}

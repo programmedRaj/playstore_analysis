@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>playstore-Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #member-profile-form .form-group {
+            margin-bottom: 1rem;
+            display: inline-block;
+            margin-right: 60px;
+        }
+
+        #member-employee-form .form-text {
+            display: inline;
+        }
+
+        ul#myTab {
+            border-bottom: 2px solid grey;
+            margin-bottom: 20px;
+            margin-top: 15px
+        }
+
+        .update-message.alert.alert-success {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        table#employee-details {
+            font-size: 12px;
+        }
+
+        table#employee-details img {
+            margin-left: 10px;
+        }
+
+        .action-emp {
+            cursor: pointer;
+        }
+
+        @media (min-width: 576px) {
+            #member-employee-form-modal.modal-dialog {
+                max-width: 700px;
+                margin: 1.75rem auto;
+            }
+        }
+
+        .modal.show .modal-dialog {
+            min-width: 700px;
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+
+        #member-employee-form-modal .form-group {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 1rem;
+        }
+
+        #member-employee-form-modal input[type="checkbox"] {
+            margin-right: 20px;
+            margin-top: 3px;
+            width: 20px;
+            height: 20px;
+        }
+
+        #member-employee-form-modal2 .form-group {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 1rem;
+        }
+
+        #member-employee-form-modal2 input[type="checkbox"] {
+            margin-right: 20px;
+            margin-top: 3px;
+            width: 20px;
+            height: 20px;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1371px;
+            }
+        }
+
+        h4.profile-sub-head-people {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #bbb0b0;
+            padding-bottom: 5px;
+            display: flex;
+            width: 100%;
+        }
+
+        h4.profile-sub-head {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #bbb0b0;
+            padding-bottom: 5px;
+            display: flex;
+            width: 100%;
+            border: 1px solid lightgrey;
+            background-color: aliceblue;
+            padding: 15px 10px;
+            border-radius: 6px;
+        }
+
+        .form-footer {
+            border-top: 1px solid #e9ecef;
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
+
+        .required-form {
+            color: red !important;
+            font-size: 12px;
+            font-weight: 900;
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div id="brandname">
+                PlayStore Analysis.
+
+            </div>
+
+
+        </div>
+    </header>
+    <div class="container-fluid">
+        <marquee>
+            <h1>Trending Category: </h1>
+            <h1 style="color: green">Family</h1>
+        </marquee>
+        <a href="../detail"><button class="btn btn-info">Polarity>> </button></a>
+        <a href="../home"><button class="btn btn-success">Go to Stats >> </button></a>
+        <a href="../graph"><button class="btn btn-primary">Go to graph >> </button></a>
+        <a href="../rating"><button class="btn btn-info">Review>> </button></a>
+        <a href="../graph3"><button class="btn btn-primary">Verison Support>> </button></a>
+
+        <a href="../graph2"><button class="btn btn-primary">Content Rating>> </button></a>
+        <a href="../sentiments"><button class="btn btn-success">Sentiments Listings >> </button></a>
+        <a href="../freeapps"><button class="btn btn-primary">free vs paid>> </button></a>
+        <a href="../go"><button class="btn btn-success"> Add App To Csv.</button></a>
+        <a href="../gameofnumbers"><button class="btn btn-warning"> Downloads LIST</button></a>
+        <a href="../go2"><button class="btn btn-danger"> Add/Update.</button></a>
+
+    </div>
+
+
+</body>
+
+</html>

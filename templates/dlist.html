@@ -1,0 +1,22 @@
+<html>
+        <title>playstore-Analyzer</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<body style=" background-color: lightblue">
+
+<a href="../"><button class="btn btn-info"><< home</button></a><br>
+<div class="container">
+        <h3 style="color:red;">The apps which belongs to </h3><h2 style="color:rgb(23, 160, 64);" >{{u[0]}}</h2><h3 style="color:red;"> categories have got the least number of downloads.</h3><br> 
+
+
+        <h3 style="color:red;">The apps which belongs to </h3><h2 style="color:rgb(23, 160, 64);">{{u[1]}}</h2><h3 style="color:red;"> categories have managed to get atleast 2,50,000 number of downloads.</h3><br>
+
+        <h3 style="color:red;">The apps which belongs to </h3><h2 style="color:rgb(23, 160, 64);">{{u[2]}}</h2><h3 style="color:red;"> categories have got the most number of downloads.</h3><br>
+
+        <img src="{{ user_image }}" alt="User Image">
+    </div>
+</body>
+
+</html>

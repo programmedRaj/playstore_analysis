@@ -1,0 +1,48 @@
+<html>
+    <title>playstore-Analyzer</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<body style=" background-color: lightblue">
+
+<a href="../"><button class="btn btn-info"><< home</button></a><br>
+<div class="container">
+<h3 style="color:red;">Relation Between Sentiment Polarity and Subjectivity </h3><br>
+<table class="table table-bordered" style="border: 1px solid black;">
+                        <thead>
+                          <tr>
+                            <!-- <th scope="col">No.</th> -->
+                            <th scope="col">Parameters</th>
+                            <th scope="col">Sentiment Polarity</th>
+                            <th scope="col">Sentiment Subjectivity</th>
+                            <p> about 75 percentile of the time sentiment polarity is around 0.4, which is positive,
+ subjectivity is between 0 and 1, median subjectivity that was understood was 0.51</p>
+                            
+                            
+                          </tr>
+                        </thead>
+                    <tbody>
+                      {% set count = namespace(b=0) %}
+ {%for i in ur%}   
+                                 <tr>
+                                        <td>{{ l[count.b]}} 
+                                           {% set count.b = count.b + 1 %}</td>
+                                        <td>{{i[0]}}</td>
+                                        <td>{{i[1]}}</td>
+                                      
+                               {%endfor%}         
+                                    </tr>
+                                    
+                                     
+                               
+                        </tbody>
+                      </table>
+<a href="/answer"><button class="btn btn-danger">Get sentiments</button> </a>
+
+<img src="{{ user_image }}" alt="User Image">
+
+</div>
+</body>
+
+</html>

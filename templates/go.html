@@ -1,0 +1,121 @@
+<html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>playstore-Analyzer</title>
+
+<body style=" background-color: rgba(195, 210, 214, 0.925)">
+<a href="../"><button class="btn btn-info"><< home</button></a><br>
+<div class="container">
+    <form method="post" action="/rating/add"> 
+        
+      <div class="form-group">
+          <label for="exampleInputEmail1">App name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter App Name:" name="app_name">
+          <small id="emailHelp" class="form-text text-muted">If this field and category matched in CSV then , Update operation will be performed.</small>
+        </div>
+        
+        
+        <div class="form-group">
+          <label for="exampleInputPassword1">Reviews</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Total Reviews" name="reviewss">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword12">Size in Mb:</label>
+          <input type="number" class="form-control" id="exampleInputPassword12" placeholder="Size in Mb:" name="size" min="1" max="100">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword13">Installs</label>
+          <input type="number" class="form-control" id="exampleInputPassword13" placeholder="Total installs" name="install" min="0">
+        </div>
+
+
+     
+        <div class="form-group">
+          <label for="exampleInputPassword14">TYPE of App :-</label>
+          <select class="form-control" name="type_app" id="examp">
+            <option>Free</option>
+            <option>Paid</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword15">Price:</label>
+          <input type="number" class="form-control" id="exampleInputPassword15" placeholder="PRICE.." name="price" min='0' value='0'>
+        </div>
+
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Rating</label>
+          <input type="number" class="form-control" id="exampleInputPassw1" placeholder="0-5" name="rating" min="0" max="5" step="0.1">
+      </div>
+
+        <div class="form-group">
+        <label for="exampleInputPassword1">Category :-</label>
+        <select class="form-control" name="cat" id="examp">
+          <option>ART_AND_DESIGN</option>
+          <option>AUTO_AND_VEHICLES</option>
+          <option>BEAUTY</option>
+          <option>BOOKS_AND_REFERENCE</option>
+          <option>BUSINESS</option>
+          <option>COMICS</option>
+          <option>COMMUNICATION</option>
+          <option>DATING</option>
+          <option>EDUCATION</option>
+          <option>ENTERTAINMENT</option>
+          <option>EVENTS</option>
+          <option>FAMILY</option>
+          <option>FINANCE</option>
+          <option>FOOD_AND_DRINK</option>
+          <option>GAME</option>
+          <option>HEALTH_AND_FITNESS</option>
+          <option>HOUSE_AND_HOME</option>
+          <option>LIBRARIES_AND_DEMO</option>
+          <option>LIFESTYLE</option>
+          <option>MAPS_AND_NAVIGATION</option>
+          <option>MEDICAL</option>
+          <option>NEWS_AND_MAGAZINES</option>
+          <option>PARENTING</option>
+          <option>PERSONALIZATION</option>
+          <option>PHOTOGRAPHY</option>
+          <option>PRODUCTIVITY</option>
+          <option>SHOPPING</option>
+          <option>SOCIAL</option>
+          <option>SPORTS</option>
+          <option>TOOLS</option>
+          <option>TRAVEL_AND_LOCAL</option>
+          <option>VIDEO_PLAYERS</option>
+          <option>WEATHER</option>
+        </select>
+      </div>
+
+<div class="form-group">
+        <label for="exampleInputPassword1">Content Ratings :-</label>
+        <select class="form-control" name="content_r" id="examp">
+          <option>Adults only 18+</option>
+          <option>Everyone</option>
+          <option>Everyone 10+</option>
+          <option>Mature 17+</option>
+          <option>Teen</option>
+          <option>Unrated</option>
+          
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">genre :-</label>
+        <select class="form-control" name="genre" id="examp">
+          <option>Comics</option>
+          <option>Sports</option>
+        </select>
+      </div>
+      
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+
+    
+</div>
+</body>
+
+</html>
