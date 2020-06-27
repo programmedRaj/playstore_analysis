@@ -7,7 +7,7 @@ Linear Regression, Bits to image coversion.
 // for windows 
 
 set FLASK_APP = app.py
-FLASK run
+flask run
 
 
 // for linux 
